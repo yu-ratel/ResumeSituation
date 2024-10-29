@@ -1,10 +1,10 @@
-import "./globals.css";
+import './globals.css';
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface Props {
   children: React.ReactNode;
-}>) {
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="ko">
       <body>{children}</body>
